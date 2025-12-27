@@ -1,0 +1,73 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 제목 */
+h2 {
+    margin-top: 60px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* 입력 박스 전체 */
+.admin-box {
+    margin-top: 35px;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 320px;
+}
+
+/* 입력창 */
+.admin-box input {
+    border: 1.5px solid #d7dce3;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: .2s;
+}
+
+.admin-box input:focus {
+    border-color: #4a6cf7;
+    background: #f4f7ff;
+}
+
+/* 버튼 */
+#submit-btn {
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#submit-btn:hover {
+    background: #3658e9;
+    transform: translateY(-1px);
+}
+
+/* 모바일 대응 */
+@media (max-width: 430px) {
+    .admin-box {
+        width: 85%;
+        padding: 28px;
+    }
+    h2 { font-size: 24px; }
+}

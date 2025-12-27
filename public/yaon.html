@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>학생회 관리 페이지</title>
+    <link rel="stylesheet" href="yaon.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h2>📋 학생회 운영 관리 대시보드</h2>
+    </header>
+
+    <div class="search-box">
+        <input id="search-id" placeholder="학번 입력" />
+        <button id="search-btn">검색</button>
+        <button id="refresh-btn">새로고침</button>
+        <button id="sort-btn">스탬프 개수 정렬</button>
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>보유 스탬프 수</th>
+                <th>스탬프 목록</th>
+            </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+    </table>
+
+    <script src="yaon.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+export const boothStampMap = {
+    "sdphpmk5": 101,
+    "6ti09tto": 102,
+    "5sqtxcxc": 103,
+    "virkti0c": 104,
+    "32v4zm2d": 105,
+    "pnci5fcv": 106,
+    "u4uo3n9w": 107,
+    "1vn10460": 108,
+    "nv08vkq8": 109,
+    "c7k6pxbh": 110,
+    "xsqza50i": 201,
+    "uzlmpubk": 202,
+    "jnakf23y": 203,
+    "2ul1n70o": 204,
+    "hitrmpzy": 205,
+    "c7j7oozm": 206,
+    "kh1s1yo7": 207,
+    "pdal9mrb": 208,
+    "zwqb6y0a": 209,
+    "cwcpjizj": 210
+};

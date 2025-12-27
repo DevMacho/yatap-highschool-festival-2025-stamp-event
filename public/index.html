@@ -1,0 +1,58 @@
+<!-- filename: index.html -->
+<!-- 설명: 메인 학생 스탬프 페이지 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야탑제 도장깨기 이벤트</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="logo.png" alt="School Logo" id="school-logo">
+        <h1 class="main-title">YATAP SCHOOOL FESTIVAL</h1>
+        <p class="sub">반별 부스 체험하고 스탬프 모아서 응원용품과 간식 받자!!</p>
+    </header>
+
+    <!-- 유저 등록 form -->
+    <section id="register-section" class="container">
+        <h2>참여자 정보 입력</h2>
+        <form id="userForm" class="form-box">
+            <input type="number" id="studentId" placeholder="학번 입력 (예:10101)" required>
+            <input type="text" id="name" placeholder="이름 입력 (예:김야탑)" required>
+            <button type="submit" class="btn-primary">등록하기</button>
+        </form>
+    </section>
+
+    <!-- 스탬프판 -->
+    <section id="stamp-section" class="container" style="display:none;">
+        <h2 id="welcome"></h2>
+        <p id="sub-guide">반별 스탬프를 눌러 부스 체험 활동을 확인하세요!</p>
+        <button id="refresh" class="btn-line">🔄 스탬프 새로고침</button>
+
+        <div class="grade-label">1학년 부스</div>
+        <div id="stamp-board-1" class="stamp-board"></div>
+
+        <div class="grade-label">2학년 부스</div>
+        <div id="stamp-board-2" class="stamp-board"></div>
+        <p id="discription">스탬프를 다 채운 학생이나 야탑제 행사 문의, 사이트 오류 등이 있는 학생들은 본관 1층 학생회실로 찾아와주세요.</p>
+    </section>
+
+    <div id="boothModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <button id="closeModal">닫기</button>
+        </div>
+    </div>
+</body>
+</html>

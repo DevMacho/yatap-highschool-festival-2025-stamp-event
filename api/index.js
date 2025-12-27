@@ -13,10 +13,7 @@ app.use(express.json()); // JSON 요청 허용
 app.use(express.static(path.join(__dirname, "public"))); // public 폴더를 정적 웹폴더로 사용
 
 // ------------------- MongoDB 연결 -------------------
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
 .then(()=> console.log("MongoDB Connected"))
 .catch(err => console.error(err));
 

@@ -104,4 +104,4 @@ app.get("/api/user/:studentId", async(req,res)=>{
 });
 
 // ------------------- 서버 실행 -------------------
-module.exports = app;
+export default app;
